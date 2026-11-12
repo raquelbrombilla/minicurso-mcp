@@ -1,0 +1,10 @@
+# Ambiente virtual e cache do Python
+.venv/
+__pycache__/
+
+# Arquivos de configuração do ambiente
+.env
+
+# Gerados na máquina de cada um
+academico.db
+.vscode/mcp.json
