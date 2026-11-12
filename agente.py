@@ -19,10 +19,13 @@ Uso:
 
 import asyncio
 import sys
+from pathlib import Path
 from anthropic import Anthropic
 from fastmcp import Client
+from dotenv import load_dotenv
 
 MODELO = "claude-haiku-5-5"  # modelo barato e rápido para a demo
+load_dotenv(Path(__file__).parent / ".env") 
 llm = Anthropic()  # lê a chave da variável ANTHROPIC_API_KEY
 
 async def agente(pergunta: str, usar_tools: bool = True):
